@@ -10,15 +10,16 @@
   <body>
 <form>
     <h1>Temperature conversion</h1>
-    <input id="number"  type="text" value="0"><br><br>
-    <input id="celsius"  type="radio">
-    <label for="celsius">Celsius Fahrenheit</label><br><br>
-    <input id="fahrenheit"  type="radio">
-    <label for="fahrenheit">Fahrenheit Celsius</label><br><br>
-<button id="submit">submit</button><br>
-<p id="result"></p>
+    <input id="number"  type="number" value="0"><br><br>
+    <input id="toCelsius"  type="radio" name="unit">
+    <label for="toCelsius">Fahrenheit → Celsius</label><br><br>
+    <input id="toFahrenheit"  type="radio" name="unit">
+    <label for="toFahrenheit">Celsius → Fahrenheit </label><br><br>
+<button type="button" onclick="convert()">submit</button><br>
+<p id="result">Select a unit</p>
 </form>
 
     <script src="./script.js" ></script>
   </body>
 </html>
+
